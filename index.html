@@ -26,20 +26,20 @@
             background-color:#FFB7CE;
             color: #CD5E77;
             border-radius: 12px;
-            border: 2px solid #FFB7CE;
+            border: 2px solid #CD5E77;
         }
     </style>
 </head>
 <body>
-    <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
-    <button class="answerButton" onclick="location.href='thankyou.html'">Yes</button>
-    <button class="answerButton" id="noButton">No (pls don't say no o(╥﹏╥)o)</button>
+    <div id="valentineQuestion"><b>Pookie will you be my valentine?</b></div>
+    <button class="answerButton" onclick="location.href='yes.html'">Yes<3</button>
+    <button class="answerButton" id="noButton">No (pls don't say no ╥﹏╥)</button>
     <br>
     <img src ='rose-cat-give-give-rose-to-cat.gif' alt = 'cat give rose' class="responsive">
 
     <script>
         document.getElementById('noButton').addEventListener('click', function() {
-            var yesButton = document.querySelector('button[onclick*="thankyou.html"]');
+            var yesButton = document.querySelector('button[onclick*="yes.html"]');
             var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
             yesButton.style.fontSize = (currentFontSize + 10) + 'px'; // Increase font size by 5px
         });
